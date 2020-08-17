@@ -47,10 +47,16 @@ sl=(
     libXinerama-devel
     libXrandr-devel
 )
+sudo xbps-install ${sl[@]}
 
+sxivdep=(
+    imlib2-devel
+    libexif-devel
+    giflib-devel
+)
+sudo xbps-install ${sxivdep[@]}
 
-
-echo 'compile sucklees stuff'
+echo 'compile suckless stuff'
 make=(
     st
     dwm
@@ -65,3 +71,6 @@ do
     cd /home/xel/src/$util
     sudo make clean install
 done
+
+# set default pdf viewer
+xdg-mime default zathura.desktop application/pdf
