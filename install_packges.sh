@@ -38,6 +38,7 @@ x=(
     xorg-fonts
     xsetroot            # for dwm status bar
     setxkbmap           # so I can set keyboard to colemak in X
+    hsetroot            # solid color background
 )
 
 echo 'suckless dependencies'
