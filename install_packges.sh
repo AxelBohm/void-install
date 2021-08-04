@@ -6,6 +6,7 @@ basic=(
     terminus-font
     # ttf-dejavu
     cmake
+    gcc
     wpa_supplicant
     tmux
     alsa-utils          # sound
@@ -26,6 +27,16 @@ sudo xbps-install cyrus-sasl
 sudo xbps-install cyrus-sasl-modules
 sudo xbps-install cyrus-sasl-modules-gssapi
 
+
+audio=(
+    alsa-utils
+    pulsaudio
+    alsa-plugins-pulsaudio
+    apulse
+)
+
+echo 'setting up audio...'
+sudo xbps-install ${audio[@]}
 
 echo 'xorg'
 x=(
