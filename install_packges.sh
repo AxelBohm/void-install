@@ -16,6 +16,8 @@ basic=(
     tlp                 # power management
     emacs-x11           # for gui goodness
     redshift
+    hunspell
+    hunspell-en_US
 )
 
 echo 'installing basics...'
