@@ -8,6 +8,7 @@ basic=(
     cmake
     gcc
     wpa_supplicant
+    wpa_gui             # some gui goodness can't hurt
     tmux
     alsa-utils          # sound
     encfs               # dropbox encryption
@@ -18,6 +19,13 @@ basic=(
     redshift
     hunspell
     hunspell-en_US
+    xdg-utils
+    autoconf            # for locally building stuff like pdf-tools
+    automake
+    poppler
+    poppler-glib
+    poppler-glib-devel
+    cairo-devel
 )
 
 echo 'installing basics...'
